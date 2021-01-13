@@ -10,7 +10,8 @@ body {
     color: #ffffff;
     margin: 0px;
     padding: 0px;
-    border: 1px dashed red;
+    border: 0px dashed red;
+    max-width: 100%;
 }
 
 .top-container {
@@ -23,21 +24,21 @@ body {
 /*
         [Section 1] is the "landing pad" intro that everyone sees before actual contact
         */
-.sec1 {
+.landingPanel {
     align-content: center;
     text-align: center;
-    padding-top: 600px;
-    padding-bottom: 900px;
+    padding-top: 65%;
+    padding-bottom: 20%;
     padding-left: 35px;
     padding-right: 35px;
 }
 
-    .sec1 h1 {
+    .landingPanel h1 {
         font-size: 75px;
         text-align: left;
     }
 
-    .sec1 h2 {
+    .landingPanel h2 {
         font-size: 32px;
     }
 
@@ -45,40 +46,42 @@ body {
              [Section 2] is the first one after the navbar and holds actual content hopefully
              */
 
-.sec2 {
+.darkPanel {
     align-content: center;
     text-align: left;
-    text-shadow: -2px -2px black;
-    margin: 0px;
-    padding-top: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 10px;
+    margin: 0%;
+    padding-top: 63.5%;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    padding-bottom: 63.5%;
     background: #1f1f1f;
+    color: white;
 }
 
+.darkPanel button {
+    border: 2px solid white;
+}
 /*
          [Section 3] Holds more content, but in contrast to [section 2]
          */
 
-.sec3 {
+.lightPanel {
     align-content: center;
     text-align: left;
-    margin: 0px;
-    padding-top: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 10px;
-    border: 0px dashed red;
+    margin: 0%;
+    padding-top: 63.5%;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    padding-bottom: 63.5%;
     background: #ffffff;
     color: black;
 }
 
-    .sec3 p {
+    .lightPanel p {
         font-size: 20px;
     }
 
-    .sec3 button {
+    .lightPanel button {
         color: black;
         border: 2px solid black
     }
@@ -87,10 +90,12 @@ body {
 .footer {
     align-content: center;
     text-align: center;
-    margin: 0px;
-    padding: 20px;
-    border: 0px dashed red;
-    background: black;
+    margin: 0%;
+    padding-top: 0.5%;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    padding-bottom: 0.5%;
+    background: #1f1f1f;
 }
 
     .footer h2 {
