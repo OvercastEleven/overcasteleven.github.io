@@ -3,23 +3,33 @@
 
 <!-- This
     is a
-    comment -->
+    comment, at least out here
+    -->
 
 <head>
-    <title>Erin Vasquez</title>
+    <title>Right Man in the Wrong Place</title>
+
     <meta charset="UTF-8" />
     <meta name="author" content="Erin Vasquez" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- This makes it pretty on all screens apparently -->
-    <meta name="description" content="An example website for resting." />
-    <meta name="revised" content="Erin Vasquez, 12/4/2020" />
+    <meta name="description" content="Landing website for everything I, Erin Vasquez, am doing." />
+    <meta name="revised" content="Erin Vasquez, 1/11/2021" />
     <meta http-equiv="Content-Script-Type" content="text/JavaScript" />
+
     <style>
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background: black;
+            background: url('images/White Snake Dark Gaussian Blur.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            background-clip: border-box;
+            background-origin: padding-box;
             color: #ffffff;
-            margin: 0;
+            margin: 0px;
+            padding: 0px;
         }
 
         .top-container {
@@ -32,19 +42,10 @@
         .sec1 {
             align-content: center;
             text-align: center;
-            padding-top: 500px;
-            padding-bottom: 200px;
-            padding-left: 40px;
-            padding-right: 40px;
-            color: white;
-            background-color: black;
-            background-image: url('images/White Snake Dark Gaussian Blur.png');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            background-attachment: fixed;
-            background-clip: border-box;
-            background-origin: padding-box;
+            padding-top: 600px;
+            padding-bottom: 900px;
+            padding-left: 35px;
+            padding-right: 35px;
         }
 
             .sec1 h1 {
@@ -53,15 +54,18 @@
             }
 
             .sec1 h2 {
-                font-size: 15px;
+                font-size: 32px;
             }
+
+        /*
+             [Section 2] is the first one after the navbar and holds actual content hopefully
+             */
 
         .sec2 {
             align-content: center;
             text-align: left;
             text-shadow: -2px -2px black;
-            margin: 200px;
-
+            margin: 0px;
             padding-top: 10px;
             padding-left: 50px;
             padding-right: 50px;
@@ -69,9 +73,9 @@
             background: #1f1f1f;
         }
 
-            .sec2 p {
-                font-size: 20px;
-            }
+        /*
+         [Section 3] Holds more content, but in contrast to [section 2]
+         */
 
         .sec3 {
             align-content: center;
@@ -81,7 +85,6 @@
             padding-left: 50px;
             padding-right: 50px;
             padding-bottom: 10px;
-
             background: #ffffff;
             color: black;
         }
@@ -98,19 +101,31 @@
             background: black;
         }
 
-            .footer h1 {
-                font-size: 10px;
+            .footer h2 {
+                text-align: left;
             }
 
             .footer p {
                 font-size: 10px;
             }
 
+
+        /*
+         Landing page button that leads to other places on site
+        */
         .mainButton {
-
+            background-color: transparent;
+            border: 2px solid white;
+            border-radius: 10px;
+            color: white;
+            padding: 10px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 24px;
+            margin: 4px 4px;
+            cursor: pointer;
         }
-
-
 
         .sticky {
             position: fixed;
@@ -119,18 +134,14 @@
         }
 
             .sticky + .content {
-                padding-top: 70px;
+                padding-top: 200px;
             }
-
-
-        /*
-            This is a JS comment
-            or a CS
-            */
 
         .navbar {
             overflow: hidden;
-            background-color: #1f1f1f;
+            background-color: #333333;
+            margin: 0px;
+            width: 100%;
         }
 
             .navbar a {
@@ -139,9 +150,10 @@
                 color: white;
                 text-align: center;
                 text-decoration: none;
-                padding: 14px 20px;
-                border: 1px solid white;
-                border-radius: 5px;
+                margin: 10px;
+                padding: 12px 15px;
+                border: 2px solid white;
+                border-radius: 8px;
             }
 
                 .navbar a.right {
@@ -149,67 +161,54 @@
                 }
 
                 .navbar a:hover {
-                    background-color: #ddd;
+                    background-color: #101010;
                     color: black;
                 }
-
-        .title-container {
-            text-align: center;
-        }
-
-            .title-container h2 {
-                font-size: 100px;
-            }
-
-            .title-container h3 {
-                font-size: 100px;
-            }
     </style>
+
 </head>
 
 <body>
-    <div class="navbar" id="navBar">
-        <a href="#">YouTube</a>
-        <a href="#">Instagram</a>
-        <a href="#">Twitter</a>
-        <a href="https://github.com/OvercastEleven/overcasteleven.github.io" class="right">GitHub</a>
-    </div>
 
     <div class="sec1">
-        <h1>Welcome...</h1>
+        <h2>"The right man in the wrong place can make all the difference."</h2>
 
-        <div>
-            <button>RESUME</button>
-        </div>
-
-        <div>
-            <button>PORTFOLIO</button>
-        </div>
-
-        <div>
-            <button>CONTACT</button>
-        </div>
-
-        <div class="sec2">
-
-            <p>
-                The following website is a landing site hosted on GitHub, written in HTML, CSS, and JavaScript. Documentation for this code can be found on<br /><br />
-            </p>
-
-        </div>
-
-        <div class="sec3">
-            <p>what up section 3</p>
-        </div>
+        <form>
+            <button class="mainButton">Resume</button>
+            <button class="mainButton">Portfolio</button>
+            <button class="mainButton">Contact</button>
+            <button class="mainButton" onclick="window.open('https://www.patreon.com/invisiblechairproject?fan_landing=true','_blank')">Donate</button>
+            <button class="mainButton" onclick="window.open('https://github.com/OvercastEleven/overcasteleven.github.io','_blank')">GitHub</button>
+        </form>
 
 
     </div>
 
+    <div class="navbar" id="navBar">
+        <a href="https://www.linkedin.com/in/erinvasquez/" target="_blank">LinkedIn</a>
+        <a href="#">Resume</a>
+        <a href="#">Portfolio</a>
+        <a href="https://www.patreon.com/invisiblechairproject target="_blank">Donate</a>
+        <a href="https://github.com/OvercastEleven/overcasteleven.github.io" target="_blank" class="right">GitHub</a>
+    </div>
 
+    <div class="sec2">
+        <h2>Resume Information printed out here</h2>
+        <p>HTML, CSS, JavaScript</p>
+    </div>
 
-    
+    <div class="sec3">
 
-    <div class="footer">
+        <h2>Portfolio of Random Projects NOT on GitHub (mostly media)</h2>
+        <p>
+            The following website is a landing site hosted on GitHub, written in HTML, CSS, and JavaScript. Documentation for this code can be found on https://github.com/OvercastEleven/overcasteleven.github.io
+        </p>
+
+    </div>
+
+    <div class="footer" name="footer">
+        <h2>Contact information here</h2>
+        <p>The following website is a landing site hosted on GitHub, written in HTML, CSS, and JavaScript. Documentation for this code can be found on https://github.com/OvercastEleven/overcasteleven.github.io</p>
         <p>"The only true wisdom is in knowing you know nothing." - Socrates</p>
     </div>
 
@@ -222,6 +221,7 @@
         var header = document.getElementById("navBar");
 
         // Get the offset position of the navbar
+        //
         var sticky = header.offsetTop;
 
 
