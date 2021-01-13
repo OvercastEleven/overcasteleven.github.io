@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <!-- This
@@ -7,163 +7,18 @@
     -->
 
 <head>
-    <title>Right Man in the Wrong Place</title>
-
+    <title>Index</title>
     <meta charset="UTF-8" />
     <meta name="author" content="Erin Vasquez" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- This makes it pretty on all screens apparently -->
-    <meta name="description" content="Landing website for everything I, Erin Vasquez, am doing." />
-    <meta name="revised" content="Erin Vasquez, 1/11/2021" />
+    <meta name="description" content="My professional Resume." />
+    <meta name="revised" content="Erin Vasquez, 1/12/2021" />
     <meta http-equiv="Content-Script-Type" content="text/JavaScript" />
+    <link rel="stylesheet"" href="mainStyle.css">
 
     <style>
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: url('images/White Snake Dark Gaussian Blur.png');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            background-attachment: fixed;
-            background-clip: border-box;
-            background-origin: padding-box;
-            color: #ffffff;
-            margin: 0px;
-            padding: 0px;
-        }
-
-        .top-container {
-            padding-top: 0px;
-            padding-bottom: 0px;
-            padding-left: 0px;
-            padding-right: 0px;
-        }
-
-        .sec1 {
-            align-content: center;
-            text-align: center;
-            padding-top: 600px;
-            padding-bottom: 900px;
-            padding-left: 35px;
-            padding-right: 35px;
-        }
-
-            .sec1 h1 {
-                font-size: 75px;
-                text-align: left;
-            }
-
-            .sec1 h2 {
-                font-size: 32px;
-            }
-
-        /*
-             [Section 2] is the first one after the navbar and holds actual content hopefully
-             */
-
-        .sec2 {
-            align-content: center;
-            text-align: left;
-            text-shadow: -2px -2px black;
-            margin: 0px;
-            padding-top: 10px;
-            padding-left: 50px;
-            padding-right: 50px;
-            padding-bottom: 10px;
-            background: #1f1f1f;
-        }
-
-        /*
-         [Section 3] Holds more content, but in contrast to [section 2]
-         */
-
-        .sec3 {
-            align-content: center;
-            text-align: left;
-            margin: 0px;
-            padding-top: 10px;
-            padding-left: 50px;
-            padding-right: 50px;
-            padding-bottom: 10px;
-            background: #ffffff;
-            color: black;
-        }
-
-            .sec3 p {
-                font-size: 20px;
-            }
-
-
-        .footer {
-            align-content: center;
-            text-align: center;
-            padding: 2px;
-            background: black;
-        }
-
-            .footer h2 {
-                text-align: left;
-            }
-
-            .footer p {
-                font-size: 10px;
-            }
-
-
-        /*
-         Landing page button that leads to other places on site
-        */
-        .mainButton {
-            background-color: transparent;
-            border: 2px solid white;
-            border-radius: 10px;
-            color: white;
-            padding: 10px 10px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 24px;
-            margin: 4px 4px;
-            cursor: pointer;
-        }
-
-        .sticky {
-            position: fixed;
-            top: 0;
-            width: 100%;
-        }
-
-            .sticky + .content {
-                padding-top: 200px;
-            }
-
-        .navbar {
-            overflow: hidden;
-            background-color: #333333;
-            margin: 0px;
-            width: 100%;
-        }
-
-            .navbar a {
-                float: left;
-                display: block;
-                color: white;
-                text-align: center;
-                text-decoration: none;
-                margin: 10px;
-                padding: 12px 15px;
-                border: 2px solid white;
-                border-radius: 8px;
-            }
-
-                .navbar a.right {
-                    float: right;
-                }
-
-                .navbar a:hover {
-                    background-color: #101010;
-                    color: black;
-                }
+        
     </style>
 
 </head>
@@ -174,7 +29,7 @@
         <h2>"The right man in the wrong place can make all the difference."</h2>
 
         <form>
-            <button class="mainButton">Resume</button>
+            <button class="mainButton" onclick="window.location.href='#resume'">Resume</button>
             <button class="mainButton">Portfolio</button>
             <button class="mainButton">Contact</button>
             <button class="mainButton" onclick="window.open('https://www.patreon.com/invisiblechairproject?fan_landing=true','_blank')">Donate</button>
@@ -184,56 +39,43 @@
 
     </div>
 
-    <div class="navbar" id="navBar">
-        <a href="https://www.linkedin.com/in/erinvasquez/" target="_blank">LinkedIn</a>
-        <a href="#">Resume</a>
-        <a href="#">Portfolio</a>
-        <a href="https://www.patreon.com/invisiblechairproject target="_blank">Donate</a>
-        <a href="https://github.com/OvercastEleven/overcasteleven.github.io" target="_blank" class="right">GitHub</a>
-    </div>
-
-    <div class="sec2">
+    <div class="sec2" id="resume">
         <h2>Resume Information printed out here</h2>
         <p>HTML, CSS, JavaScript</p>
+        <p>Link to the resume site</p>
+
+        <form>
+            <button class="mainButton" onclick="window.open('./resume.html','_blank')">Resume</button>
+        </form>
     </div>
 
     <div class="sec3">
 
         <h2>Portfolio of Random Projects NOT on GitHub (mostly media)</h2>
+        <button class="mainButton" onclick="window.open('./portfolio.html','_blank')">Portfolio</button>
         <p>
             The following website is a landing site hosted on GitHub, written in HTML, CSS, and JavaScript. Documentation for this code can be found on https://github.com/OvercastEleven/overcasteleven.github.io
         </p>
+
+        <p>
+            1) Elevator PItch. Let them understand me, what I can do, and what I'm looking for. @ to 3 paragraph summary. Things ive worked on, my superpower, my personality. Avoid life story.
+            Have exaples of best work like a gallery. Show off some work. LIke how many hours spent
+            practicing or something. Don't put EVERYTHING, just the good stuff. Avoiding showing off any in-progress works. Keep the links professional and job related.. LIke sites I contribute to or that I've built. Or anywhere it looks like I'm an expert.
+            Include a professional blog. You get to become a thought leader. Show of writing skills man.
+            Skip a blog if you don't update it consistently. Old blogs means old site.
+            Include testimonials. Avoid bragging with testimonials. Include myself visualized. VECTOR ART yASELF MAN.
+        </p>
+
+        <p>A page for each section of your resume sounds awesome. Try using different images for each as an eyecatch. INclude contact info and links at some point (bottom most likely).</p>
 
     </div>
 
     <div class="footer" name="footer">
         <h2>Contact information here</h2>
-        <p>The following website is a landing site hosted on GitHub, written in HTML, CSS, and JavaScript. Documentation for this code can be found on https://github.com/OvercastEleven/overcasteleven.github.io</p>
         <p>"The only true wisdom is in knowing you know nothing." - Socrates</p>
     </div>
 
     <script>
-
-        // When the user scrolls the page, execute my Function
-        window.onscroll = function () { myFunction() };
-
-        // Get the header
-        var header = document.getElementById("navBar");
-
-        // Get the offset position of the navbar
-        //
-        var sticky = header.offsetTop;
-
-
-        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the
-        // scroll position
-        function myFunction() {
-            if (window.pageYOffset > sticky) {
-                header.classList.add("sticky");
-            } else {
-                header.classList.remove("sticky");
-            }
-        }
 
     </script>
 
